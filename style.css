@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    width: 592px;
+    height: 190px;
+    padding: 10px;
+    text-align: end;
+    font-size: 100px;
+    border: none;
+    margin-bottom: 4px;
+    border-radius: 20px;
+    background-color: #112031;
+    color: #D4ECDD;
+}
+
+.calcExtern {
+    /* margin: 20px; */
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.calcIntern {
+    padding: 10px;
+    background-color: #D4ECDD;
+    border-radius: 20px;
+}
+
+button {
+    padding: 15px;
+    width: 150px;
+    height: 150px;
+    font-size: 60px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    background-color: #345B63;
+    color: #D4ECDD;
+    border: none;
+    border-radius: 20px;
+    transition: all 0.5s;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.numero-0 {
+    width: 458px;
+}
+
+.clear {
+    width: 612px;
+    background-color: #112031;
+    transition: all 0.5s;
+}
+
+.operacoes {
+    background-color: #112031;
+    transition: all 0.5s;
+}
+
+.numeros:hover,
+.numero-0:hover {
+    box-shadow: rgba(0, 0, 0, 0.322) 0px 0px 3px;
+    background-color: #345b63df;
+    cursor: pointer;
+}
+
+.clear:hover,
+.operacoes:hover {
+    background-color: #112031df;
+    cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
