@@ -3,9 +3,15 @@
     padding: 0;
 }
 
+body{
+    background: radial-gradient(#345b63, #112031);
+}
+
 main {
     display: flex;
     justify-content: center;
+    height: 100vh;
+    align-items: center;
 }
 
 input {
@@ -34,6 +40,7 @@ input {
     padding: 10px;
     background-color: #D4ECDD;
     border-radius: 20px;
+    box-shadow: #00000070 0 0 30px;
 }
 
 button {
@@ -57,7 +64,7 @@ button {
 }
 
 .clear {
-    width: 612px;
+    width: 49.5%;
     background-color: #112031;
     transition: all 0.5s;
 }
@@ -65,6 +72,17 @@ button {
 .operacoes {
     background-color: #112031;
     transition: all 0.5s;
+}
+
+.row-5{
+    display: flex;
+    justify-content: space-between
+
+
+}
+
+#calcular{
+    width: 49.5%;
 }
 
 .numeros:hover,
@@ -87,4 +105,8 @@ input[type=number]::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
     appearance: textfield;
+}
+
+input:focus{
+    outline: none;
 }
