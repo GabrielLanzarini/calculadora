@@ -4,7 +4,8 @@
 }
 
 body{
-    background: radial-gradient(#345b63, #112031);
+    /* background: radial-gradient(#345b63, #112031); */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
@@ -14,7 +15,7 @@ main {
     align-items: center;
 }
 
-input {
+.display{
     width: 592px;
     height: 190px;
     padding: 10px;
@@ -23,50 +24,75 @@ input {
     border: none;
     margin-bottom: 4px;
     border-radius: 20px;
-    background-color: #112031;
-    color: #D4ECDD;
-}
-
-.calcExtern {
-    /* margin: 20px; */
-}
-
-.botoes {
+    /* background-color: #112031; */
+    color: white; 
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    overflow-x: auto;
 }
+
+p{
+    margin-right: 20px;
+    overflow-x: auto;
+    color: white;
+}
+
+p::-webkit-scrollbar {
+    width: 100px;
+    height: 20px;
+    align-items: flex-end;             
+  }
+  
+  p::-webkit-scrollbar-track {
+    background: #D4ECDD;
+    border-radius: 20px;       
+  }
+  
+  p::-webkit-scrollbar-thumb {
+    background-color: #345b63;    
+    border-radius: 20px;      
+    border: 3px solid #D4ECDD; 
+  }
 
 .calcIntern {
     padding: 10px;
-    background-color: #D4ECDD;
+    background-color: black;
     border-radius: 20px;
     box-shadow: #00000070 0 0 30px;
 }
 
 button {
     padding: 15px;
-    width: 150px;
+    width: 23%;
     height: 150px;
     font-size: 60px;
     margin-bottom: 2px;
     margin-top: 2px;
-    background-color: #345B63;
-    color: #D4ECDD;
+    background-color: #1D1D1D;
+    color: white;
     border: none;
-    border-radius: 20px;
+    border-radius: 100%;
     transition: all 0.5s;
     text-align: center;
     vertical-align: middle;
 }
 
-.numero-0 {
-    width: 458px;
+.botaoOperacao{
+    background-color: #dd8c1b;
+    color: white;
 }
 
-.clear {
-    width: 49.5%;
-    background-color: #112031;
+.numero-0 {
+    width: 458px;
+    border-radius: 20px;
+}
+
+.botaoClear {
+    width: 72%;
+    background-color: #414141;;
     transition: all 0.5s;
+    border-radius: 20px;
 }
 
 .operacoes {
@@ -74,28 +100,10 @@ button {
     transition: all 0.5s;
 }
 
-.row-5{
+.row{
     display: flex;
-    justify-content: space-between
-
-
-}
-
-#calcular{
-    width: 49.5%;
-}
-
-.numeros:hover,
-.numero-0:hover {
-    box-shadow: rgba(0, 0, 0, 0.322) 0px 0px 3px;
-    background-color: #345b63df;
-    cursor: pointer;
-}
-
-.clear:hover,
-.operacoes:hover {
-    background-color: #112031df;
-    cursor: pointer;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 input[type=number]::-webkit-inner-spin-button {
@@ -109,4 +117,9 @@ input[type=number] {
 
 input:focus{
     outline: none;
+}
+
+button:hover{
+    cursor: pointer;
+    filter: brightness(120%);
 }
